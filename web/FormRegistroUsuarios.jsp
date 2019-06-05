@@ -8,17 +8,17 @@
     </head>
     <body>
         <%
-            Connection con;
+            /*Connection con;
             String url="jdbcmysql://localhost:pruebaug";
             String Driver="com.mysql://jdbc.Driver";
             String user="root";
             Class.forName(Driver);
-            con=DriverManager.getConnection(url);
+            con=DriverManager.getConnection(url);*/
             
             PreparedStatement ps;
             ResultSet rs;
-            ps.prepareStatement("select * from usuario");
-            rs=ps.executeQuery();
+            //ps.prepareStatement("select * from usuario");
+            //rs=ps.executeQuery();
         %>
         <p>Bienvenido a la Administración de Usuarios!!!</p>
         <table>
@@ -34,11 +34,11 @@
                 <th>Acciones</th>
             </tr>
 
-                <%
+                <%/*
                     while(rs.next()) {
-                %>
+                */%>
 
-            <tr>
+           <%-- <tr> 
                 <td><%= rs.getInt("id_usuario")%></td>
                 <td><%= rs.getChar("usuario")%></td>
                 <td><%= rs.getChar("id_contraseina")%></td>
@@ -47,7 +47,7 @@
                 <td><%= rs.getString("apellido_mat")%></td>
                 <td><%= rs.getString("dni")%></td>
                 <td><%= rs.getString("id_policia")%></td>
-                
+            --%>    
                 
             </tr>
         </table>
